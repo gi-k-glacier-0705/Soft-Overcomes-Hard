@@ -1,0 +1,85 @@
+:root {
+    --bg-color: #e8e6e1; /* Aged paper / Washi texture color */
+    --ink-color: #1a1a1a;
+    --structure-color: #7a7a7a;
+    --ui-bg: rgba(255, 255, 255, 0.8);
+    --accent: #4a4a4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    color: var(--ink-color);
+}
+
+#canvas-main {
+    display: block;
+    cursor: crosshair;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.panel {
+    background: var(--ui-bg);
+    padding: 20px;
+    max-width: 300px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    pointer-events: auto;
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: var(--ink-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.stats {
+    font-size: 0.8rem;
+    font-family: monospace;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
