@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Soft Overcomes the Hard | Generative Sumi-e</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <div class="panel">
+            <h1>The Soft Overcomes the Hard</h1>
+            <p>Rigid structures (the Hard) are eroded by the continuous flow of ink (the Soft). Click or drag to place new obstacles.</p>
+            <div class="controls">
+                <button id="btn-clear" title="Remove all rigid structures">Clear Obstacles</button>
+                <button id="btn-reset" title="Restart the flow">Reset Flow</button>
+            </div>
+            <div class="stats" id="stats">
+                Obstacle Integrity: <span id="integrity-value">100</span>%
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas-main" aria-label="A generative art canvas showing black ink-like particles flowing around and slowly eroding grey geometric shapes."></canvas>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
