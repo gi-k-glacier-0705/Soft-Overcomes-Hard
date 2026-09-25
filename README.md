@@ -17,23 +17,7 @@ Angle=sin(x⋅f+t)+cos(y⋅f+t)
       
 
 
-Where
-
-        
-f
-f
-
-      
-
-is frequency and
-
-        
-t
-t
-
-      
-
-is time. This generates a deterministic yet organic-looking fluid motion without needing a heavy Perlin noise library. Mathematically, this represents a vector field where every coordinate in space has a corresponding force vector. In the metaphor, this is the "Dao" or the natural flow of the universe—unseen but persistent.
+Where f is frequency and t is time. This generates a deterministic yet organic-looking fluid motion without needing a heavy Perlin noise library. Mathematically, this represents a vector field where every coordinate in space has a corresponding force vector. In the metaphor, this is the "Dao" or the natural flow of the universe—unseen but persistent.
 2. Collision and Erosion (The Interaction)
 
 The "Hard" obstacles represent rigid ego or fixed structures. In code, collision is a simple AABB (Axis-Aligned Bounding Box) check. However, the interaction is the key:
