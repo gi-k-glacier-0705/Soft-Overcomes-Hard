@@ -244,7 +244,14 @@ class App {
             ? (totalIntegrity / this.obstacles.length) * 100
             : 0;
 
-        document.getElementById('integrity-value').textContent = averageIntegrity.toFixed(1);
+        const displayedIntegrity = Math.max(0, Math.min(100, averageIntegrity));
+        const integrityValue = document.getElementById('integrity-value');
+        const integrityBar = document.getElementById('integrity-bar');
+        const stats = document.getElementById('stats');
+
+        integrityValue.textContent = displayedIntegrity.toFixed(1);
+        integrityBar.style.width = displayedIntegrity + '%';
+        stats.setAttribute('aria-valuenow', displayedIntegrity.toFixed(1));
     }
 
     draw() {
