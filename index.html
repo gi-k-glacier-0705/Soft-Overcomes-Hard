@@ -15,8 +15,19 @@
                 <button id="btn-clear" title="Remove all rigid structures">Clear Obstacles</button>
                 <button id="btn-reset" title="Restart the flow">Reset Flow</button>
             </div>
-            <div class="stats" id="stats">
-                Obstacle Integrity: <span id="integrity-value">100</span>%
+            <div class="stats" id="stats"
+                 role="progressbar"
+                 aria-label="Average obstacle integrity"
+                 aria-valuemin="0"
+                 aria-valuemax="100"
+                 aria-valuenow="100">
+                <div class="stats-heading">
+                    <span class="stats-label">Obstacle Integrity</span>
+                    <span class="stats-value"><span id="integrity-value">100.0</span>%</span>
+                </div>
+                <div class="stats-track" aria-hidden="true">
+                    <div class="stats-fill" id="integrity-bar"></div>
+                </div>
             </div>
             <div>
                 <details class="philosophy">
