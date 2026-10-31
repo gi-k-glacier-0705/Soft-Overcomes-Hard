@@ -44,4 +44,8 @@ The visual design avoids "digital" colors, using a palette inspired by Washi (Ja
     Organic Variation: Particle sizes are tied to their velocity, mimicking the way a brush stroke thickens or thins based on the speed of the hand.
 
 
-## ☯️ [***Experience Soft Overcomes Hard Live!***](https://soft-overcomes-hard.geekgelasia.dev/)
+## ☯️ [***Experience it Live!***](https://soft-overcomes-hard.geekgelasia.dev/)
+
+
+### Copyright & permissions
+© 2026 Geek Gelasia. All rights reserved. This repository is publicly available for viewing and educational reference. No license is currently granted for reuse, redistribution, or derivative works without permission.
